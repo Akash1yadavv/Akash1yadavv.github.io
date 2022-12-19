@@ -9827,13 +9827,13 @@ textarea.form-control {
     row-gap: 25px;
     width: 80%;
   }
-  .skills{
+  
+}
+@media screen and (min-width: 480px) {
+  /* #Myskills{
     border: 5px solid red;
     width: 20px;
     margin: auto;
     
-  }
-  
-
-  
+  } */
 }
