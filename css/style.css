@@ -463,19 +463,28 @@ pre {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
-  @media (min-width: 576px) {
+  margin-left: auto; 
+}
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px; 
+  } 
+}
+@media (min-width: 768px) {
     .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
+       max-width: 720px; 
+    }
+}
+@media (min-width: 992px) {
     .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
+        max-width: 960px; 
+      } 
+}
+@media (min-width: 1200px) {
     .container {
-      max-width: 960px; } }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px; } }
+        max-width: 1140px;
+    } 
+}
 
 .container-fluid {
   width: 100%;
@@ -9090,7 +9099,12 @@ textarea.form-control {
 
 .ftco-section {
   padding: 7em 0;
-  position: relative; }
+  position: relative; 
+  margin: auto;
+  width: 80%;
+  border: 1px solid pink;
+
+}
   @media (max-width: 767.98px) {
     .ftco-section {
       padding: 6em 0; } }
@@ -9711,11 +9725,15 @@ textarea.form-control {
 #nameDiv{
   height: 800px;
   width: 100%;
+  text-align: center;
   margin-top: -10px;
   padding-top: 220px;
   /* background-image: url("https://wallup.net/wp-content/uploads/2015/12/19536-abstract-dark-nature.jpg"); */
   
   background-image: url("https://wallpapercave.com/wp/wCA4iXi.jpg");
+  background-repeat: no-repeat;
+  background-repeat: round;
+
 }
 
 #a{
@@ -9746,6 +9764,9 @@ textarea.form-control {
 }
 
 .Circular_bar{
+  border: 2px solid red;
+  width: 86%;
+  margin: auto;
   display: grid;
   height: auto;
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
@@ -9773,3 +9794,46 @@ textarea.form-control {
 /* .button-84{
   cursor: pointer;
 } */
+
+
+#git_status{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 2%;
+  width: 100%;
+}
+#git_status>p{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 2%;
+  width: 100%;
+}
+
+@media all and (max-width:768px) {
+  #git_status>p{
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  #git_status>p+p{
+    width: 180%;
+  }
+}
+@media all and (max-width:460px) {
+  
+  #git_status>p{
+    flex-direction: column;
+    row-gap: 25px;
+    width: 80%;
+  }
+  .skills{
+    border: 5px solid red;
+    width: 20px;
+    margin: auto;
+    
+  }
+  
+
+  
+}
