@@ -255,3 +255,16 @@
 
 })(jQuery);
 
+
+function openAndDownload() {
+  // open in new tab
+  window.open('Akash_Yadav_Resume.pdf', '_blank');
+
+  // trigger download
+  const a = document.createElement('a');
+  a.href = 'Akash_Yadav_Resume.pdf';
+  a.download = 'Akash_Yadav_Resume';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
